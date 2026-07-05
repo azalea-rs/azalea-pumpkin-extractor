@@ -124,14 +124,6 @@ class Blocks : Extractor.Extractor {
                 blockJson.add("flammable", flammableJson)
             }
 
-            if (block is DropExperienceBlock) {
-                blockJson.add(
-                    "experience", DropExperienceBlock.CODEC.codec().encodeStart(
-                        RegistryOps.create(JsonOps.INSTANCE, server.registryAccess()),
-                        block,
-                    ).getOrThrow()
-                )
-            }
             if (block.lootTable.isPresent) {
                 val table = server.reloadableRegistries()
                     .getLootTable(block.lootTable.get())
