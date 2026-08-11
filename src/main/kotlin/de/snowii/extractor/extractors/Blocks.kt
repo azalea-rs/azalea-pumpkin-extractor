@@ -88,6 +88,7 @@ class Blocks : Extractor.Extractor {
             blockJson.addProperty("friction", block.friction)
             blockJson.addProperty("velocity_multiplier", block.speedFactor)
             blockJson.addProperty("jump_velocity_multiplier", block.jumpFactor)
+            blockJson.addProperty("bounce_restitution", block.bounceRestitution)
             blockJson.addProperty("hardness", block.defaultDestroyTime())
             blockJson.addProperty("blast_resistance", block.explosionResistance)
             blockJson.addProperty("item_id", BuiltInRegistries.ITEM.getId(block.asItem()))
