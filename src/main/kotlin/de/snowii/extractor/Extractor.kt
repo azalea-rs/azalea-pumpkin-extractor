@@ -29,7 +29,6 @@ class Extractor : ModInitializer {
 
         val extractors = arrayOf(
             Effect(),
-            PotionBrewing(),
             Potion(),
             Sounds(),
             WorldEvent(),
@@ -54,9 +53,7 @@ class Extractor : ModInitializer {
             DamageTypes(),
             Fluids(),
             Properties(),
-            ComposterIncreaseChance(),
             FlowerPotTransformation(),
-            Fuels(),
         )
 
         val outputDirectory: Path
